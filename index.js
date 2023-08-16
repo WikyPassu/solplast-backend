@@ -8,7 +8,7 @@ const { logger, handlerNotFound, handlerError } = require("./src/utils/mw");
 const productRouter = require("./src/routes/product.routes");
 
 app.use(cors({
-  origin: "*",//https://solplast.vercel.app",
+  origin: "https://solplast.vercel.app",
   methods: ["GET"]
 }));
 app.use(express.json());
